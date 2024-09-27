@@ -33,7 +33,7 @@ try
         Console.Write("Данные по какому пользователю нужны: ");
         int curUser = int.Parse(Console.ReadLine());
         try { 
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < col; i++)
             {
                 Console.Write($"{usersArray[curUser - 1, i]} ");
             }
