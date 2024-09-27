@@ -32,9 +32,15 @@ try
         Console.WriteLine();
         Console.Write("Данные по какому пользователю нужны: ");
         int curUser = int.Parse(Console.ReadLine());
-        for (int i = 0; i < 3; i++)
+        try { 
+            for (int i = 0; i < 3; i++)
+            {
+                Console.Write($"{usersArray[curUser - 1, i]} ");
+            }
+        }
+        catch
         {
-            Console.Write($"{usersArray[curUser - 1, i]} ");
+            Console.WriteLine("В каталоге нет такого пользователя");
         }
     }
 }
